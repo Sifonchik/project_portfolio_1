@@ -20,22 +20,30 @@ body {
    align-items: center;
 }
 
-.flex_inbox_start {
+.flex_inbox_start,
+.flex_logo {
    justify-content: start;
 }
 
-.logo img {
+.flex_footer {
+   align-items: start;
+}
+
+.header_logo img,
+.footer_logo img {
    margin-right: 15px;
 }
 
-.header_logo_title {
+.header_logo_title,
+.footer_logo_title {
    font-weight: 700;
    font-size: 20px;
    line-height: 25px;
    color: #2B292D;
 }
 
-.header_logo_text {
+.header_logo_text,
+.footer_logo_text {
    font-size: 18px;
    line-height: 25px;
    color: rgba(43, 41, 45, 0.6);
@@ -438,7 +446,7 @@ body {
    font-size: 20px;
 }
 
-input::placeholder {
+.free_trial_input::placeholder {
    font-size: 18px;
    line-height: 13px;
    color: #2B292D;
@@ -501,6 +509,88 @@ input::placeholder {
 .free_trial_image:hover {
    animation-play-state: paused;
 }
+
+/*FOOTER*/
+
+.footer {
+   padding: 43px 0 15px;
+   margin-bottom: 37px;
+}
+
+.footer_up {
+   margin-bottom: 59px;
+}
+
+.footer_logo {
+   margin-bottom: 26px;
+}
+
+.footer_text {
+   max-width: 360px;
+   font-size: 18px;
+   line-height: 26px;
+   color: rgba(43, 41, 45, 0.6);
+   margin-bottom: 25px;
+}
+
+.footer_image {
+   margin-right: 10px;
+}
+
+.footer_title {
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 28px;
+   margin-bottom: 18px;
+   color: #2B292D;
+}
+
+.footer_link {
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 30px;
+   color: rgba(43, 41, 45, 0.6);
+}
+
+.footer_link:hover {
+   font-weight: 700;
+   text-decoration: underline;
+   transition: 300ms;
+}
+
+.footer_company {
+   margin-left: 100px;
+   margin-right: 190px;
+}
+
+.footer_line {
+   border-bottom: 1px solid #2B292D;
+   opacity: 0.1;
+   margin-bottom: 13px;
+}
+
+.footer_text_li:not(:first-of-type) {
+   margin-left: 20px;
+}
+
+.footer_icon_li:not(:last-of-type) {
+   margin-right: 20px;
+}
+
+.footer_text_link {
+   font-size: 14px;
+   line-height: 22px;
+   color: rgba(43, 41, 45, 0.6);
+   text-decoration: none;
+}
+
+.footer_text_link:hover {
+   font-weight: 700;
+   text-decoration: underline;
+   transition: 300ms;
+}
+
+
 
 /*MEDIA*/
 
