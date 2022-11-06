@@ -9,7 +9,9 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" integrity="sha512-UBY4KATrDAEKgEEU+RAfY4yWrK0ah43NGwNr5o/xmncxsT+rv8jp7MI3a00I0Ep3NbAx05U5kw3DvyNCoz+Wcw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="./style/style.css">
+      <link rel="stylesheet" href="./style/carusel.css">
    </head>
    <body>
       <!--HEADER-->
@@ -26,19 +28,27 @@
                   </p>
                </div>
             </div>
-            <nav class="header_nav flex">
-               <ul class="header_ul flex">
-                  <li class="header_li">
-                     <a class="header_link" href="#">Home</a>
-                  </li>
-                  <li class="header_li">
-                     <a class="header_link" href="#">Stories</a>
-                  </li>
-               </ul>
-               <button class="button">
-                  Get Started
-               </button>
-            </nav>
+            <div class="menu">
+               <input  type="checkbox" class="checkbox_header">
+               <div class="check_wrapper">
+                  <div class="check"></div>
+                  <div class="check"></div>
+                  <div class="check"></div>
+               </div>
+               <nav class="header_nav flex menu_all">
+                  <ul class="header_ul flex flex_menu">
+                     <li class="header_li">
+                        <a id="about_link" class="header_link" href="#">Home</a>
+                     </li>
+                     <li class="header_li">
+                        <a class="header_link" href="#">Stories</a>
+                     </li>
+                  </ul>
+                  <button class="button">
+                     Get Started
+                  </button>
+               </nav>
+            </div>
          </div>
       </header>
       <!--MAIN-->
@@ -54,7 +64,7 @@
                <button class="button">
                   Get Started
                </button>
-               <button class="button button_white ">
+               <button id="open_modal" class="button button_white">
                   Learn More
                </button>
             </div>
@@ -93,6 +103,63 @@
          <a href="https://www.wsj.com/" target="_blank"><img src="./img/logo/wsj_logo.svg" alt="WSJ_logo"></a>
          <a href="https://google.com" target="_blank"><img src="./img/logo/google_logo.svg" alt="Google_logo"></a>
       </div>
+      <!--FEATURES-->
+      <section class="features">
+         <div class="container flex features_container">
+            <div class="features_info">
+               <p class="features_info_pretitle">
+                  Features
+               </p>
+               <p class="features_info_title">
+                  Easily find leads and customers
+               </p>
+               <p class="features_info_text">
+                  Send one-off and automated email, push, and in-app messages to people. Create better stories.
+               </p>
+               <div>
+                  <div class="features_items">
+                     <div class="flex flex_icon features_icon">
+                        <img src="./img/features/customers_icon.svg" alt="">
+                        <p class="features_pretitle">
+                           Acquire new customers
+                        </p>
+                     </div>
+                     <p class="features_text">
+                        Everything you need to start building – including open-source code, documentation.
+                     </p>
+                  </div>
+                  <div class="features_items">
+                     <div class="flex flex_icon features_icon">
+                        <img src="./img/features/users_icon.svg" alt="">
+                        <p class="features_pretitle">
+                           Engage users
+                        </p>
+                     </div>
+                     <p class="features_text">
+                        Everything you need to start building – including open-source code, documentation.
+                     </p>
+                  </div>
+                  <div class="features_items">
+                     <div class="flex flex_icon features_icon">
+                        <img src="./img/features/platforms_icon.svg" alt="">
+                        <p class="features_pretitle">
+                           Develop across platforms
+                        </p>
+                     </div>
+                     <p class="features_text">
+                        Everything you need to start building – including open-source code, documentation.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="features_image">
+               <img width="684" height="591"  src="./img/features/Invision_Screen_image.png" alt="Invision_Screen_image">
+            </div>
+         </div>
+         <div class="features_image-eye">
+            <img src="./img/features/eye_image.png" alt="eye_image">
+         </div>
+      </section>
       <!--TEAM_INBOX-->
       <section class="inbox">
          <div class="container flex flex_inbox-column">
@@ -226,6 +293,120 @@
          <a href="https://www.wsj.com/" target="_blank"><img src="./img/logo/wsj_logo.svg" alt="WSJ_logo"></a>
          <a href="https://google.com" target="_blank"><img src="./img/logo/google_logo.svg" alt="Google_logo"></a>
       </div>
+      <!--SLIDER-->
+      <section class="slider">
+         <div class="carusel">
+            <div>
+               <p class="carusel_title">
+                  Trusted by the world’s most innovative businesses – big and small
+               </p>
+               <p class="carusel_text">
+                  “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+               </p>
+               <p class="carusel_name">
+                  Viella Malkovich
+               </p>
+               <p class="carusel_position">
+                  Creative Director at Johnson
+               </p>
+            </div>
+            <div>
+               <p class="carusel_title">
+                  Trusted by the world’s most innovative businesses – big and small
+               </p>
+               <p class="carusel_text">
+                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab omnis veritatis harum corporis reiciendis vero placeat ipsum in nemo eaque magnam molestias velit exercitationem dolorem, culpa quo id? Quasi, nihil.
+               </p>
+               <p class="carusel_name">
+                  Viella Malkovich
+               </p>
+               <p class="carusel_position">
+                  Creative Director at Johnson
+               </p>
+            </div>
+            <div>
+               <p class="carusel_title">
+                  Trusted by the world’s most innovative businesses – big and small
+               </p>
+               <p class="carusel_text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, sed officiis explicabo autem nisi quas veritatis corporis consequuntur totam voluptatem.
+               </p>
+               <p class="carusel_name">
+                  Viella Malkovich
+               </p>
+               <p class="carusel_position">
+                  Creative Director at Johnson
+               </p>
+            </div>
+         </div>
+         <div class="slider_image">
+            <img width="273" height="243" src="./img/slider/ball_image.png" alt="ball_image">
+         </div>
+      </section>
+      <!--ABOUT-->
+      <section id="about" class="container about">
+         <div class="about_info">
+            <p class="about_info_title">
+               We’re hiring
+            </p>
+            <p class="about_info_text">
+               We’re a team of lifelong learners. We’re equal parts left and right brained.
+            </p>
+            <button class="button button_long">
+               More about Company
+            </button>
+         </div>
+         <div>
+            <div class="about_items">
+               <div class="flex">
+                  <p class="about_pretitle">
+                     Front-End Developer
+                  </p>
+                  <p class="about_location">
+                     Los Angeles / Remote
+                  </p>
+                  <p class="about_icon">
+                     >
+                  </p>
+               </div>
+               <p class="about_text">
+                  Everything you need to start building – including open-source code, documentation.
+               </p>
+            </div>
+            <div class="about_items">
+               <div class="flex">
+                  <p class="about_pretitle">
+                     Community Manager
+                  </p>
+                  <p class="about_location">
+                     New York / Full-Time
+                  </p>
+                  <p class="about_icon">
+                     >
+                  </p>
+               </div>
+               <p class="about_text">
+                  Everything you need to start building – including open-source code, documentation.
+               </p>
+            </div>
+            <div class="about_items">
+               <div class="flex">
+                  <p class="about_pretitle">
+                     UX/UI Designer
+                  </p>
+                  <p class="about_location">
+                     New York / Full-Time
+                  </p>
+                  <p class="about_icon">
+                     >
+                  </p>
+               </div>
+               <p class="about_text">
+                  Everything you need to start building – including open-source code, documentation.
+               </p>
+            </div>
+         </div>
+      </section>
       <!--SURFACES-->
       <section class="container surface">
          <div class="surface_info">
@@ -267,7 +448,7 @@
                </button>
             </form>
             <label class="free_trial_text">
-               <input class="checkbox" type="checkbox">
+               <input class="checkbox_free_trial" type="checkbox">
                <span class="fake"></span>
                <span class="text">Free 14-day trial · Easy setup · Cancel any time. Check out <a class="free_trial_text-link" href="#">Terms of Use.</a></span>
             </label>
@@ -340,5 +521,25 @@
             </div>
          </div>
       </footer>
+      <div class="modal_overlay">
+         <div class="modal">
+            <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, ipsum. Necessitatibus, omnis similique! Tempore perspiciatis eaque provident sequi magnam labore!
+            </p>
+            <p class="close">
+               x
+            </p>
+         </div>  
+      </div>
+      <div id="up">
+         <span>></span>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./script/bxslider.js"></script>
+      <script src="./script/script.js"></script>
+      <script src="./script/modal.js"></script>
+      <script src="./script/upButton.js"></script>
+      <script src="./script/link.js"></script>
    </body>
 </html> 
