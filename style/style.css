@@ -191,11 +191,6 @@ body {
    margin-bottom: 123px;
 }
 
-.features_container > div:last-of-type {
-   position: absolute;
-   right: 0;
-}
-
 .features_info_pretitle {
    color: #009B4D;
    margin-bottom: 24px;
@@ -241,9 +236,15 @@ body {
    transition: 300ms;
 }
 
+.features_image {
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
 .features_image-eye {
    position: absolute;
-   bottom: 170px;
+   top: 280px;
 }
 
 /*TEAM_INBOX*/
